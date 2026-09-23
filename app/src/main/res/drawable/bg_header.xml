@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- 对角微渐变：比竖向纯色过渡更有光感，且浅端提亮避免头部发闷 -->
+    <gradient
+        android:angle="290"
+        android:endColor="@color/brand_primary_dark"
+        android:startColor="@color/brand_primary"
+        android:type="linear" />
+    <corners
+        android:bottomLeftRadius="26dp"
+        android:bottomRightRadius="26dp" />
+</shape>

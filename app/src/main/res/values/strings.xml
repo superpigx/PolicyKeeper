@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">保单管家</string>
+
+    <!-- 底部导航 -->
+    <string name="tab_home">总览</string>
+    <string name="tab_policy">保单</string>
+    <string name="tab_stats">统计</string>
+    <string name="tab_settings">设置</string>
+
+    <!-- 通用 -->
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="edit">编辑</string>
+    <string name="confirm">确定</string>
+    <string name="add">添加</string>
+
+    <!-- 首页 -->
+    <string name="home_title">我的保单</string>
+    <string name="home_year_total">本年保费支出</string>
+    <string name="home_year_net_label">%1$d 年净保费</string>
+    <string name="home_year_breakdown">原价 %1$s · 已收返款 %2$s</string>
+    <string name="home_year_breakdown_pending">原价 %1$s · 已收 %2$s · 待收 %3$s</string>
+    <string name="home_pending_rebate">待收返款 %1$s · %2$d 笔</string>
+    <string name="home_policy_count">生效中保单</string>
+    <string name="home_insured_count">投保对象</string>
+    <string name="home_expiring">待续保</string>
+    <string name="home_expiring_empty">近期没有需要续保的保单，安心</string>
+    <string name="home_attention_hint">车险提前 90 天 · 人身险到期日</string>
+    <string name="home_stat_active">生效中</string>
+    <string name="home_stat_insured">对象</string>
+    <string name="attention_group_vehicle">车辆</string>
+    <string name="attention_group_person">人员</string>
+    <string name="attention_overdue">有已过期</string>
+    <string name="attention_due_today">今天到期</string>
+    <string name="attention_fastest">最快 %1$d 天后</string>
+    <string name="home_all_policies">全部保单</string>
+    <string name="home_recent">最近录入</string>
+    <string name="home_empty">还没有保单记录\n先添加一辆车或一位家人，再录入保单</string>
+
+    <!-- 保单列表 -->
+    <string name="policy_title">保单列表</string>
+    <string name="policy_search_hint">搜索保险公司 / 险种 / 保单号</string>
+    <string name="policy_filter_all">全部</string>
+    <string name="policy_empty">暂无保单</string>
+    <string name="policy_add_new">新增保单</string>
+
+    <!-- 保单表单 -->
+    <string name="form_title_new">新增保单</string>
+    <string name="form_title_edit">编辑保单</string>
+    <string name="form_insured">投保对象</string>
+    <string name="form_category">险种类别</string>
+    <string name="form_insurer">保险公司</string>
+    <string name="form_policy_no">保单号</string>
+    <string name="form_start">生效日期</string>
+    <string name="form_end">到期日期</string>
+    <string name="form_premium">原价（支付金额）</string>
+    <string name="form_rebate">返款（优惠返点）</string>
+    <string name="form_rebate_helper">保险公司或业务员返给你的点数，没有就留空</string>
+    <string name="form_net_premium">实际净保费</string>
+    <string name="form_net_hint">原价 − 返款</string>
+    <string name="form_net_hint_value">原价 %1$s − 返款 %2$s</string>
+    <string name="form_rebate_invalid">返款格式不正确</string>
+    <string name="form_rebate_state">返款状态</string>
+    <string name="rebate_pending">待收</string>
+    <string name="rebate_received">已收</string>
+    <string name="form_net_negative">返款高于原价，净保费为 0</string>
+    <string name="form_cycle">缴费方式</string>
+    <string name="form_note">备注</string>
+    <string name="form_attachments">保单附件</string>
+    <string name="form_add_attachment">添加照片 / 文件</string>
+    <string name="form_insured_hint">请选择投保对象</string>
+    <string name="form_required">请填写此项</string>
+    <string name="form_premium_invalid">金额格式不正确</string>
+    <string name="form_date_invalid">日期格式应为 2025-01-01</string>
+    <string name="form_end_before_start">到期日期不能早于生效日期</string>
+    <string name="form_saved">已保存</string>
+    <string name="form_delete_confirm">确定删除这份保单吗？附件也会一并删除。</string>
+    <string name="form_deleted">已删除</string>
+
+    <!-- 投保对象 -->
+    <string name="insured_title">投保对象管理</string>
+    <string name="insured_add_title">新增投保对象</string>
+    <string name="insured_edit_title">编辑投保对象</string>
+    <string name="insured_dialog_subtitle">先建好对象，再为它录入保单</string>
+    <string name="insured_dialog_subtitle_edit">修改后，该对象名下的保单会一起更新</string>
+    <string name="insured_relation_quick">常用关系</string>
+    <string name="insured_note_optional">备注</string>
+    <string name="insured_name_vehicle">车牌号</string>
+    <string name="insured_name_person">姓名</string>
+    <string name="insured_detail_vehicle">车型</string>
+    <string name="insured_detail_person">与本人关系</string>
+
+    <!-- 输入提示：hint 承担浮动标签，placeholder 只在空值时给示例，两者分工不重复 -->
+    <string name="insured_ph_name_vehicle">如 京A·12345</string>
+    <string name="insured_ph_name_person">如 张伟</string>
+    <string name="insured_ph_detail_vehicle">选填，如 特斯拉 Model Y</string>
+    <string name="insured_ph_detail_person">选填，如 子女</string>
+    <string name="insured_ph_note">选填，比如投保渠道</string>
+    <string name="insured_add">新增对象</string>
+    <string name="insured_vehicle">车辆</string>
+    <string name="insured_person">人员</string>
+    <string name="insured_name">车牌号 / 姓名</string>
+    <string name="insured_detail">车型 / 与本人关系</string>
+    <string name="insured_note">备注</string>
+    <string name="insured_empty">还没有投保对象，先添加车辆或家人</string>
+    <string name="insured_delete_confirm">该对象下有 %1$d 份保单，删除后这些保单也会被删除。</string>
+    <string name="insured_delete_confirm_empty">确定删除「%1$s」吗？</string>
+
+    <!-- 统计 -->
+    <string name="stats_title">保费统计</string>
+    <string name="stats_trend">历年保费支出</string>
+    <string name="stats_compare_title">同一对象逐年对比</string>
+    <string name="stats_compare_hint">选一辆车或一位家人，看它历年的保费变化</string>
+    <string name="stats_compare_up">%1$d 年 %2$s · 比 %3$d 年多花 %4$s（+%5$s%%）</string>
+    <string name="stats_compare_down">%1$d 年 %2$s · 比 %3$d 年少花 %4$s（−%5$s%%）</string>
+    <string name="stats_compare_flat">%1$d 年 %2$s · 与 %3$d 年持平</string>
+    <string name="stats_compare_only">%1$d 年 %2$s · 还没有往年数据可对比</string>
+    <string name="stats_compare_row_meta">原价 %1$s · 返 %2$s</string>
+    <string name="stats_compare_row_meta_none">无返款</string>
+    <string name="stats_by_category">按险种构成</string>
+    <string name="stats_by_insured">按投保对象</string>
+    <string name="stats_yoy">同比变化</string>
+    <string name="stats_empty">还没有足够的数据\n录入保单后这里会自动生成图表</string>
+    <string name="stats_year_total">%1$d 年净保费合计</string>
+    <string name="stats_year_total_original">%1$d 年原价合计</string>
+    <string name="stats_year_breakdown">原价 %1$s · 已收返款 %2$s</string>
+    <string name="stats_year_breakdown_pending">原价 %1$s · 已收 %2$s · 待收 %3$s</string>
+    <string name="stats_mode_label">统计口径</string>
+    <string name="stats_mode_net">净保费</string>
+    <string name="stats_mode_original">原价</string>
+    <string name="card_rebate_note">原价 %1$s · 返 %2$s</string>
+
+    <!-- 保单状态：全 App 统一文案，由 PolicyStatusUi 映射，不要在别处硬编码 -->
+    <string name="status_renewed">已续保</string>
+    <string name="status_expired">已过期</string>
+    <string name="status_pending">未生效</string>
+    <string name="status_due_today">今天到期</string>
+    <string name="status_renewable">可续保</string>
+    <string name="status_active">生效中</string>
+    <string name="card_renewed_to">已续至 %1$s</string>
+    <string name="stats_no_prev">无上一年数据</string>
+    <string name="stats_up">较上年 ↑ %1$s%%</string>
+    <string name="stats_down">较上年 ↓ %1$s%%</string>
+    <string name="stats_flat">与上年持平</string>
+
+    <!-- 设置 -->
+    <string name="settings_title">设置</string>
+    <string name="settings_insured_manage">投保对象管理</string>
+    <string name="settings_insured_manage_desc">管理车辆与家庭成员</string>
+    <string name="settings_export">导出备份</string>
+    <string name="settings_export_desc">导出为 JSON 文件（含全部记录）</string>
+    <string name="settings_export_csv">导出保费明细 CSV</string>
+    <string name="settings_export_csv_desc">可用 Excel / WPS 打开</string>
+    <string name="settings_import">导入备份</string>
+    <string name="settings_import_desc">从 JSON 备份文件恢复数据</string>
+    <string name="settings_import_confirm">导入将覆盖当前全部数据，确定继续吗？</string>
+    <string name="settings_import_ok">导入成功，共 %1$d 份保单</string>
+    <string name="settings_import_fail">导入失败：文件格式不正确</string>
+    <string name="settings_clear">清空全部数据</string>
+    <string name="settings_clear_desc">删除所有保单和对象记录</string>
+    <string name="settings_clear_confirm">⚠ 将删除全部保单、投保对象与附件，且无法恢复。建议先导出备份。</string>
+    <string name="settings_cleared">已清空</string>
+    <string name="settings_about">关于</string>
+    <string name="settings_data_count">当前共 %1$d 个投保对象、%2$d 份保单</string>
+    <string name="settings_version">版本 %1$s</string>
+    <string name="settings_tip">数据仅保存在本机。换手机前请先「导出备份」。</string>
+
+    <!-- 检查更新 -->
+    <string name="settings_check_update">检查更新</string>
+    <string name="settings_check_update_desc">当前版本 %1$s</string>
+    <string name="update_checking">正在检查新版本…</string>
+    <string name="update_preparing">正在准备下载…</string>
+    <string name="update_downloading">正在下载 %1$d%%</string>
+    <string name="update_installing">下载完成，正在调起安装…</string>
+    <string name="update_latest_title">已是最新版本</string>
+    <string name="update_latest_msg">当前版本 %1$s 已是最新，无需更新。</string>
+    <string name="update_fail_title">检查更新失败</string>
+    <string name="update_found_title">发现新版本 %1$s</string>
+    <string name="update_found_msg">当前版本 %1$s，可升级到 %2$s。</string>
+    <string name="update_size">安装包大小约 %1$s</string>
+    <string name="update_now">立即更新</string>
+    <string name="update_download_fail">下载失败，请稍后重试</string>
+    <string name="update_install_fail">无法调起安装器，请手动打开安装包</string>
+    <string name="update_need_permission_title">需要安装权限</string>
+    <string name="update_need_permission_msg">请允许「保单管家」安装应用，授权后返回再次点击「检查更新」即可完成安装。</string>
+    <string name="update_go_settings">去设置</string>
+    <string name="update_not_configured">尚未配置更新源，暂时无法检查更新</string>
+
+    <!-- 通用提示 -->
+    <string name="export_ok">已导出到：%1$s</string>
+    <string name="export_fail">导出失败</string>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+
+    <!-- ==================== 品牌层 ====================
+         主色选用清晰可靠的蓝，避免低饱和深藏蓝带来的沉闷感 -->
+    <color name="brand_primary">#FF2563EB</color>
+    <color name="brand_primary_dark">#FF1741B6</color>
+    <color name="brand_primary_container">#FFE7EFFE</color>
+
+    <!-- 辅助色：只用于「钱」相关的正向信息（返款、附件），与状态绿区分语义 -->
+    <color name="brand_secondary">#FF0D9C74</color>
+    <color name="brand_secondary_container">#FFDDF5ED</color>
+
+    <!-- ==================== 中性层 ==================== -->
+    <color name="bg_app">#FFF4F6FA</color>
+    <color name="surface">#FFFFFFFF</color>
+    <color name="surface_line">#FFE8EDF4</color>
+    <color name="divider">#FFF0F3F9</color>
+
+    <!-- ==================== 文字层 ====================
+         三级层级：主信息 / 辅助信息 / 补充说明 -->
+    <color name="text_primary">#FF111A27</color>
+    <color name="text_secondary">#FF5E6B7C</color>
+    <color name="text_tertiary">#FF96A2B2</color>
+
+    <!-- ==================== 状态层 ====================
+         每个状态色都配一个同色系的浅底，用于胶囊与提示条 -->
+    <color name="status_ok">#FF1B8A4B</color>
+    <color name="status_ok_bg">#FFE4F5EA</color>
+    <color name="status_warn">#FFB26A05</color>
+    <color name="status_warn_bg">#FFFDF1DE</color>
+    <color name="status_expired">#FFC0332B</color>
+    <color name="status_expired_bg">#FFFCEBE9</color>
+
+    <!-- ==================== 图表层 ==================== -->
+    <color name="chart_bar">#FF4A86F7</color>
+    <color name="chart_bar_dim">#FFC6DAFB</color>
+    <color name="chart_grid">#FFE8EDF4</color>
+
+    <color name="ripple">#1A2563EB</color>
+
+    <!-- 底部表单的拖拽手柄 -->
+    <color name="sheet_handle">#FFD3DAE5</color>
+
+    <!-- 品牌底色之上的半透明层，用于头部玻璃感指标卡 -->
+    <color name="on_brand_glass">#1FFFFFFF</color>
+    <color name="on_brand_glass_line">#2EFFFFFF</color>
+</resources>

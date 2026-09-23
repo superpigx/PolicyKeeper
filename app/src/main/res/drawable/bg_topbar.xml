@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- 与首页头部同一套渐变，让两个页面看起来像同一个产品 -->
+    <gradient
+        android:angle="290"
+        android:endColor="@color/brand_primary_dark"
+        android:startColor="@color/brand_primary"
+        android:type="linear" />
+</shape>
