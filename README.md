@@ -120,14 +120,15 @@ Windows PowerShell：
 
 App 通过 GitHub Releases API 查询最新版本，需要知道仓库地址。有两种方式：
 
-**方式一（推荐）**：在 `gradle.properties` 中取消注释并填写
+本仓库已配置好：
 
 ```properties
-policykeeper.github.owner=你的GitHub用户名
+policykeeper.github.owner=superpigx
 policykeeper.github.repo=PolicyKeeper
 ```
 
-**方式二**：直接改 `app/build.gradle.kts` 中 `defaultConfig` 里的默认值。
+如果你是 Fork 过去、或改了仓库名，需要同步修改这两项；也可以直接改
+`app/build.gradle.kts` 中 `defaultConfig` 里的默认值。
 
 未配置时点击「检查更新」会提示「尚未配置更新源」，不会发起任何网络请求。
 
