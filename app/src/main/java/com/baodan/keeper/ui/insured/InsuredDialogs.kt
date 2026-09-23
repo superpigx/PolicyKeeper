@@ -10,6 +10,7 @@ import com.baodan.keeper.databinding.DialogEditInsuredBinding
 import com.baodan.keeper.databinding.ItemFilterChipBinding
 import com.baodan.keeper.model.Insured
 import com.baodan.keeper.model.InsuredType
+import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.chip.Chip
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -82,6 +83,22 @@ object InsuredDialogs {
         dialog.setContentView(b.root)
         // 键盘弹出时压缩内容区并允许滚动，而不是把整个面板顶出屏幕
         dialog.window?.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE)
+
+        /*
+         * 面板内容的高度是变化的：切到「人员」会多出「常用关系」一行，切回「车辆」又收起来。
+         * BottomSheet 默认会跟着重新测量，并把折叠状态一起重算 —— 结果就是面板突然向上跳、
+         * 甚至被顶到屏幕外，用户看到的就是「弹飞」。
+         *
+         * 这里直接在显示时把折叠态排除掉并锁定为展开：高度变化只发生在面板内部，
+         * 不再牵动整个窗口的定位。内容矮时面板依然自然贴底（isFitToContents）。
+         */
+        dialog.setOnShowListener {
+            dialog.behavior.apply {
+                skipCollapsed = true
+                isFitToContents = true
+                state = BottomSheetBehavior.STATE_EXPANDED
+            }
+        }
 
         // 先定初始状态再挂监听，避免初始化时被回调打断
         b.typeToggle.check(

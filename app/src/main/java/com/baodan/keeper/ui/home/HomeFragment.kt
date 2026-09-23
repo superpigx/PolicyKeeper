@@ -40,6 +40,12 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding.fabAdd.setOnClickListener { openEditor(null) }
         binding.btnEmptyAdd.setOnClickListener { openEditor(null) }
+
+        // 待收返款提醒条：就地展开清单，处理完下滑即回首页。
+        // 关闭时统一刷新一次 —— 面板里可能已经把钱标记成已收了
+        binding.boxPendingRebate.setOnClickListener {
+            PendingRebateSheet.show(requireContext()) { render() }
+        }
     }
 
     override fun onResume() {

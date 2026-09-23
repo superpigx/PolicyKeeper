@@ -69,10 +69,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvTitle">
 
+        <!-- 刻意不开 android:animateLayoutChanges：高度动画会让 BottomSheet 在每一帧
+             都重新测量并重新定位，点「人员」展开「常用关系」时面板会跳动甚至被顶出屏幕 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:animateLayoutChanges="true"
             android:orientation="vertical">
 
             <!-- 类型：一行分段选择器 -->

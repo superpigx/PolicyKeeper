@@ -197,7 +197,7 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- 待收返款提醒 -->
+            <!-- 待收返款提醒：点击展开待收清单 -->
             <LinearLayout
                 android:id="@+id/boxPendingRebate"
                 android:layout_width="match_parent"
@@ -206,6 +206,8 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/bg_pending_rebate"
+                android:clickable="true"
+                android:focusable="true"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
                 android:paddingStart="14dp"
@@ -232,6 +234,15 @@
                     android:textSize="13sp"
                     android:textStyle="bold"
                     tools:text="待收返款 ¥150 · 2 笔" />
+
+                <!-- 可点的暗示：没有这个箭头，用户不会想到这行能展开 -->
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="6dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_chevron_right"
+                    app:tint="@color/status_warn" />
             </LinearLayout>
 
             <!-- 首次使用空态 -->

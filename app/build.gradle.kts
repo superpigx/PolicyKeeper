@@ -23,8 +23,8 @@ android {
         applicationId = "com.baodan.keeper"
         minSdk = 24
         targetSdk = 34
-        versionCode = 7
-        versionName = "1.6"
+        versionCode = 8
+        versionName = "1.7"
 
         // App 内「检查更新」指向的 GitHub 仓库。
         // 通常无需改这里：在 gradle.properties 里覆盖即可（见该文件注释）。

@@ -79,6 +79,20 @@
     <string name="form_delete_confirm">确定删除这份保单吗？附件也会一并删除。</string>
     <string name="form_deleted">已删除</string>
 
+    <!-- 待收返款清单：首页提醒条展开后的面板 -->
+    <string name="rebate_sheet_title">待收返款</string>
+    <string name="rebate_sheet_summary">合计 %1$s · %2$d 笔待收</string>
+    <string name="rebate_sheet_all_clear">已全部到账 · 共 %1$d 笔</string>
+    <string name="rebate_sheet_hint">点一行可查看和编辑该保单</string>
+    <string name="rebate_mark_all">全部标记已收</string>
+    <string name="rebate_mark_done">标记已收</string>
+    <string name="rebate_undo">撤销</string>
+    <string name="rebate_row_meta">%1$s · %2$s</string>
+    <string name="rebate_row_meta_plain">%1$s</string>
+    <string name="rebate_all_done">返款都收齐了</string>
+    <string name="rebate_all_done_hint">没有待收的返款，这笔钱已经落袋</string>
+    <string name="rebate_marked_all">已标记 %1$d 笔到账</string>
+
     <!-- 投保对象 -->
     <string name="insured_title">投保对象管理</string>
     <string name="insured_add_title">新增投保对象</string>

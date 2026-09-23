@@ -152,6 +152,22 @@
         <item name="strokeWidth">1dp</item>
     </style>
 
+    <!-- ==================== 清单内的小按钮 ====================
+         只承担「标记已收」这类单一动作。压到 32dp 高、去掉最小宽度限制，
+         否则会把清单行撑得松散 —— 这里是扫读场景，不是表单 -->
+    <style name="Widget.PolicyKeeper.MiniButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="cornerRadius">10dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">32dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
     <!-- ==================== 底部表单 ====================
          表单类交互改用底部弹出：全宽输入框呼吸感更好，键盘弹出时与内容自然贴合 -->
     <style name="Theme.PolicyKeeper.BottomSheet" parent="Theme.Material3.Light.BottomSheetDialog">

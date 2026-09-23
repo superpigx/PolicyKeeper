@@ -340,6 +340,31 @@ class Store private constructor(private val app: Context) {
     /** 存在待收返款的保单数 */
     fun pendingRebateCount(): Int = policies.count { it.pendingRebate > 0.0 }
 
+    /**
+     * 还有返款没到账的保单，按待收金额降序 —— 大额先催，钱要用在刀刃上。
+     * 「待收返款」提醒条展开的清单就是从这里取的。
+     */
+    fun pendingRebatePolicies(): List<Policy> =
+        policies.filter { it.pendingRebate > 0.0 }.sortedByDescending { it.pendingRebate }
+
+    /** 把某份保单的返款标记为已收 / 撤销回待收。返回是否真的发生了改动 */
+    fun setRebateReceived(policyId: String, received: Boolean): Boolean {
+        val p = policyById(policyId) ?: return false
+        if (!p.hasRebate() || p.rebateReceived == received) return false
+        p.rebateReceived = received
+        save()
+        return true
+    }
+
+    /** 一次性把所有待收返款标记为已收，返回处理的笔数 */
+    fun markAllRebateReceived(): Int {
+        val targets = policies.filter { it.pendingRebate > 0.0 }
+        if (targets.isEmpty()) return 0
+        for (p in targets) p.rebateReceived = true
+        save()
+        return targets.size
+    }
+
     fun policiesOfYear(year: Int): List<Policy> =
         policies.filter { Dates.yearOf(it.startDate) == year }
 
